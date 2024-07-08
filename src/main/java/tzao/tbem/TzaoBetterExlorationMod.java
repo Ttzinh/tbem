@@ -1,6 +1,7 @@
 package tzao.tbem;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,6 +15,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import tzao.tbem.item.ModCreativeModeTabs;
+import tzao.tbem.item.ModItems;
 
 @Mod(TzaoBetterExlorationMod.MOD_ID)
 public class TzaoBetterExlorationMod {
@@ -21,6 +24,10 @@ public class TzaoBetterExlorationMod {
     private static final Logger LOGGER = LogUtils.getLogger();
     public TzaoBetterExlorationMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -32,9 +39,13 @@ public class TzaoBetterExlorationMod {
     private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+
+        }
     }
+
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 
