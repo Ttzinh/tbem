@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import tzao.tbem.TzaoBetterExlorationMod;
+import tzao.tbem.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -21,6 +22,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.AMBER.get());
                         pOutput.accept(ModItems.ARTIFACT.get());
 
+                        pOutput.accept(ModBlocks.AMBER_BLOCK.get());
 
                     })
                     .build());
