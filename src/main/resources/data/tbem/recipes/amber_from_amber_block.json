@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tbem:amber_block"
+    }
+  ],
+  "result": {
+    "item": "tbem:amber",
+    "count": 9
+  }
+}

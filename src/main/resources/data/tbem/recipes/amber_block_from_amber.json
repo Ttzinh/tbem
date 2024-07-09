@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tbem:amber"
+    }
+  },
+  "result": {
+    "item": "tbem:amber_block"
+  }
+}
