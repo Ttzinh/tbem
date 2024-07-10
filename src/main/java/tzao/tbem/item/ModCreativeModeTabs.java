@@ -22,8 +22,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.AMBER.get());
                         pOutput.accept(ModItems.ARTIFACT.get());
 
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+
                         pOutput.accept(ModBlocks.AMBER_BLOCK.get());
                         pOutput.accept(ModBlocks.AMBER_ORE.get());
+
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
                     })
                     .build());

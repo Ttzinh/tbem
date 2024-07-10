@@ -1,9 +1,12 @@
 {
   "item.tbem.amber": "Amber",
   "item.tbem.artifact": "Artifact",
+  "item.tbem.metal_detector": "Metal Detector",
 
   "block.tbem.amber_block": "Amber Block",
   "block.tbem.amber_ore": "Amber Ore",
+
+  "block.tbem.sound_block": "Sound Block",
 
   "creativetab.tzaobetterexploration_tab": "Tzao's BEM"
 }
