@@ -1,6 +1,13 @@
+# Tzao's BEM - Version 0.0.4
+
+### Added a Custom Block:
+- Sound Block  
+### Added a Custom Item:  
+- Metal Detector
+
 # Tzao's BEM - Version 0.0.3
 
-Added recipes.
+### Added recipes.
 - Amber to Amber Block.
 - Amber Block to Amber.
 - Smelting Amber gives Honey Bottle.
